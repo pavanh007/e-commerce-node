@@ -1,7 +1,7 @@
-import app from "./app.js";
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
-dotenv.config()
+const app = require("./app.js");
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
+dotenv.config({ path: "./config.env" });
 
 
 mongoose
