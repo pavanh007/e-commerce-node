@@ -6,7 +6,7 @@ const router = express.Router();
 
 router
   .route("/")
-  .post(VT.verifyToken, productController.createProduct)
+  .post( productController.createProduct)
   .get(productController.getAllProducts);
 
 router

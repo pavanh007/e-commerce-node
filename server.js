@@ -19,8 +19,8 @@ mongoose
     process.exit(1); // Exit the process with an error code
   });;
 
-  const server = app.listen(process?.env?.PORT || 5000, () => {
-    console.log(`Application runnning on server ${process?.env?.PORT}`);
+  const server = app.listen(process?.env?.PORT, () => {
+    console.log(`Application runnning on server ${process.env.PORT}`);
   });
 
   process.on("uncaughtException", (err) => {
